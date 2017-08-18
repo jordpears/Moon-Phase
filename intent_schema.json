@@ -1,0 +1,90 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "currentPhase",
+      "samples": [
+        "what is the current moon phase",
+        "current phase",
+        "phase today",
+        "phase tonight",
+        "current moon phase",
+        "what is the moon phase tonight",
+        "what phase is the moon ",
+        "what phase is the moon tonight",
+        "what is the current phase of the moon",
+        "what is the current phase",
+        "what is the phase of the moon tonight",
+        "phase of the moon",
+        "what is the moon",
+        "what is the moon tonight"
+      ],
+      "slots": []
+    },
+    {
+      "name": "nextPhaseIntent",
+      "samples": [
+        "tell me when the next {moonPhase} moon is",
+        "when is the next {moonPhase} moon",
+        "next {moonPhase}",
+        "next {moonPhase} moon",
+        "when is the next {moonPhase}",
+        "tell me when the next {moonPhase}",
+        "tell me the next {moonPhase} moon",
+        "tell me the next {moonPhase}",
+        "what date is the next {moonPhase} moon",
+        "what date is the next {moonPhase}",
+        "when the next {moonPhase} is",
+        "when the next {moonPhase}",
+        "when the next {moonPhase} moon is",
+        "when the next {moonPhase} moon"
+      ],
+      "slots": [
+        {
+          "name": "moonPhase",
+          "type": "moonPhase",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "moonPhase",
+      "values": [
+        {
+          "id": "2",
+          "name": {
+            "value": "full",
+            "synonyms": [
+              "whole",
+              "total",
+              "maximum"
+            ]
+          }
+        },
+        {
+          "id": "1",
+          "name": {
+            "value": "new",
+            "synonyms": [
+              "no",
+              "minimum"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
